@@ -35,6 +35,7 @@ class App extends Component<{}, State> {
     const filteredMonsters = monsters.filter(m => m.name.toLowerCase().includes(searchField.toLowerCase()))
     return (
       <div className="App">
+        <h1> Monsters Rolodex </h1>
         <SearchBox placeholder='search monsters' handleChange={this.onSearchChange}/>
         <CardList monsters={filteredMonsters}/>
       </div>
